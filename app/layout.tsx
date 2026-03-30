@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Open_Sans, Montserrat } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-
 const oswald = Oswald({
   subsets: ["latin"],
   weight: ["600"],
@@ -47,7 +47,21 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${oswald.variable} ${openSans.variable} ${montserrat.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-17721733763`}
+        />
+        <Script id="google-ads" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17721733763');
+          `
+        }} />
+        {children}
+      </body>
     </html>
   );
 }
