@@ -59,7 +59,11 @@ export default function Navbar() {
             className="btn-cta navbar-cta desktop-only"
             onClick={() => {
               if (typeof window !== 'undefined' && (window as any).gtag) {
-                (window as any).gtag('event', 'ads_conversion_Contact_1');
+                (window as any).gtag('event', 'conversion', {
+                  'send_to': 'AW-17721733763/EuMKCOmKvpIcEIPlsIJC',
+                  'value': 1.0,
+                  'currency': 'BRL'
+                });
               }
             }}
           >
@@ -94,7 +98,11 @@ export default function Navbar() {
           onClick={() => {
             setMenuOpen(false);
             if (typeof window !== 'undefined' && (window as any).gtag) {
-              (window as any).gtag('event', 'ads_conversion_Contact_1');
+              (window as any).gtag('event', 'conversion', {
+                'send_to': 'AW-17721733763/EuMKCOmKvpIcEIPlsIJC',
+                'value': 1.0,
+                'currency': 'BRL'
+              });
             }
           }}
         >

@@ -20,13 +20,31 @@ export default function CTAFinal() {
               className="btn-cta"
               onClick={() => {
                 if (typeof window !== 'undefined' && (window as any).gtag) {
-                  (window as any).gtag('event', 'ads_conversion_Contact_1');
+                  (window as any).gtag('event', 'conversion', {
+                    'send_to': 'AW-17721733763/EuMKCOmKvpIcEIPlsIJC',
+                    'value': 1.0,
+                    'currency': 'BRL'
+                  });
                 }
               }}
             >
               Solicitar Orçamento
             </a>
-            <a href="https://wa.me/5511988982108" target="_blank" rel="noopener noreferrer" className="btn-banner-outline">
+            <a 
+              href="https://wa.me/5511988982108" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-banner-outline"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'conversion', {
+                    'send_to': 'AW-17721733763/EuMKCOmKvpIcEIPlsIJC',
+                    'value': 1.0,
+                    'currency': 'BRL'
+                  });
+                }
+              }}
+            >
               Falar pelo WhatsApp
             </a>
           </div>
