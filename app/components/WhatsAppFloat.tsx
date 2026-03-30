@@ -2,7 +2,7 @@ export default function WhatsAppFloat() {
   return (
     /* CONFIRMAR NÚMERO */
     <a
-      href="#"
+      href="https://wa.me/5511988982108"
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"

@@ -21,7 +21,7 @@ export default function CTAFinal() {
             >
               Solicitar Orçamento
             </a>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="btn-banner-outline">
+            <a href="https://wa.me/5511988982108" target="_blank" rel="noopener noreferrer" className="btn-banner-outline">
               Falar pelo WhatsApp
             </a>
           </div>
