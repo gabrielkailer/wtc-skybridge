@@ -52,7 +52,12 @@ export default function Navbar() {
             <a href="#como-funciona" className="navbar-link">Como Funciona</a>
             <a href="#depoimentos" className="navbar-link">Depoimentos</a>
           </div>
-          <a href="#cta-final" className="btn-cta navbar-cta desktop-only">
+          <a 
+            href="https://evento.wtcclub.com.br/cadastrar.aspx?5796-0-Interesse(evento)" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-cta navbar-cta desktop-only"
+          >
             Solicite seu Orçamento
           </a>
         </div>
@@ -76,7 +81,13 @@ export default function Navbar() {
         <a href="#beneficios" className="navbar-link" onClick={() => setMenuOpen(false)}>Benefícios</a>
         <a href="#como-funciona" className="navbar-link" onClick={() => setMenuOpen(false)}>Como Funciona</a>
         <a href="#depoimentos" className="navbar-link" onClick={() => setMenuOpen(false)}>Depoimentos</a>
-        <a href="#cta-final" className="btn-cta" onClick={() => setMenuOpen(false)}>
+        <a 
+          href="https://evento.wtcclub.com.br/cadastrar.aspx?5796-0-Interesse(evento)" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn-cta" 
+          onClick={() => setMenuOpen(false)}
+        >
           Solicite seu Orçamento
         </a>
       </div>

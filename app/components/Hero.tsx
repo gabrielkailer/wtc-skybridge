@@ -30,7 +30,12 @@ export default function Hero() {
         </p>
 
         <div className="hero-ctas">
-          <a href="#cta-final" className="btn-cta">
+          <a 
+            href="https://evento.wtcclub.com.br/cadastrar.aspx?5796-0-Interesse(evento)" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-cta"
+          >
             Solicite seu Orçamento
           </a>
           <a href="#espacos" className="btn-secondary--white">
