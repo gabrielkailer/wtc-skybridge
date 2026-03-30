@@ -18,6 +18,11 @@ export default function CTAFinal() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-cta"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'ads_conversion_Contact_1');
+                }
+              }}
             >
               Solicitar Orçamento
             </a>

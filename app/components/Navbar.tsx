@@ -57,6 +57,11 @@ export default function Navbar() {
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-cta navbar-cta desktop-only"
+            onClick={() => {
+              if (typeof window !== 'undefined' && (window as any).gtag) {
+                (window as any).gtag('event', 'ads_conversion_Contact_1');
+              }
+            }}
           >
             Solicite seu Orçamento
           </a>
@@ -86,7 +91,12 @@ export default function Navbar() {
           target="_blank" 
           rel="noopener noreferrer" 
           className="btn-cta" 
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false);
+            if (typeof window !== 'undefined' && (window as any).gtag) {
+              (window as any).gtag('event', 'ads_conversion_Contact_1');
+            }
+          }}
         >
           Solicite seu Orçamento
         </a>
