@@ -7,13 +7,12 @@ export default function WhatsAppFloat() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"
-      onClick={() => {
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'conversion', {
-            'send_to': 'AW-17721733763/EuMKCOmKvpIcEIPlsIJC',
-            'value': 1.0,
-            'currency': 'BRL'
-          });
+      onClick={(e) => {
+        e.preventDefault();
+        if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
+          (window as any).gtag_report_conversion("https://wa.me/5511988982108");
+        } else {
+          window.open("https://wa.me/5511988982108", "_blank");
         }
       }}
     >

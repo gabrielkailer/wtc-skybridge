@@ -55,9 +55,25 @@ export default function RootLayout({
         <Script id="google-ads" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
-            window.gtag = function(){window.dataLayer.push(arguments);}
-            window.gtag('js', new Date());
-            window.gtag('config', 'AW-17721733763');
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'AW-17721733763');
+
+            window.gtag_report_conversion = function(url) {
+              var callback = function () {
+                if (typeof(url) != 'undefined') {
+                  window.open(url, '_blank');
+                }
+              };
+              gtag('event', 'conversion', {
+                  'send_to': 'AW-17721733763/EuMKCOmKvpIcEIPlsIJC',
+                  'value': 1.0,
+                  'currency': 'BRL',
+                  'event_callback': callback
+              });
+              return false;
+            };
           `
         }} />
         {children}
