@@ -1,3 +1,5 @@
+"use client";
+
 export default function CTAFinal() {
   return (
     <div className="cta-banner-wrapper">
