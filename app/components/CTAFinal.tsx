@@ -10,9 +10,6 @@ export default function CTAFinal() {
             <p className="cta-banner-subtitle">
               Solicite seu orçamento e descubra como o WTC Sky Bridge pode transformar o seu evento corporativo — e a percepção dos seus convidados.
             </p>
-            <p className="cta-banner-contact">
-              Precisa de ajuda com o formato? <a href="mailto:contato@wtcskybridge.com.br">contato@wtcskybridge.com.br</a>
-            </p>
           </div>
           <div className="cta-banner-action">
             <a
