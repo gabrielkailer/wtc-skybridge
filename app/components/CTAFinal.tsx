@@ -29,16 +29,16 @@ export default function CTAFinal() {
               Solicitar Orçamento
             </a>
             <a 
-              href="https://wa.me/5511988982108" 
+              href="https://wa.me/5511988982108?text=Oi%20tudo%20bem%3F%20Eu%20vim%20pelo%20site%20da%20Sky%20Bridge%2C%20poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F%20" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-banner-outline"
               onClick={(e) => {
                 e.preventDefault();
                 if (typeof window !== 'undefined' && (window as any).gtag_report_conversion) {
-                  (window as any).gtag_report_conversion("https://wa.me/5511988982108");
+                  (window as any).gtag_report_conversion("https://wa.me/5511988982108?text=Oi%20tudo%20bem%3F%20Eu%20vim%20pelo%20site%20da%20Sky%20Bridge%2C%20poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F%20");
                 } else {
-                  window.open("https://wa.me/5511988982108", "_blank");
+                  window.open("https://wa.me/5511988982108?text=Oi%20tudo%20bem%3F%20Eu%20vim%20pelo%20site%20da%20Sky%20Bridge%2C%20poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F%20", "_blank");
                 }
               }}
             >
