@@ -28,6 +28,10 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
+            <h4 className="footer-heading">Contato</h4>
+            <p className="footer-text">
+              <a href="mailto:Skybridge@wtcclub.com.br">Skybridge@wtcclub.com.br</a>
+            </p>
             <div className="footer-socials">
               <a href="https://www.instagram.com/wtcskybridge/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Image src="/logos/instagram-icon.png" alt="Instagram" width={20} height={20} />
